@@ -1,5 +1,5 @@
 
-# 对list中的重复元素进行重命名，统计，删除
+# 1.对list中的重复元素进行重命名，统计，删除
 
 def rename_duplicate(list,print_result=False):
     renamed_duplicate = [v+str(list[:i].count(v)+1) if list.count(v)>1 else v for i,v in enumerate(list)]
@@ -27,6 +27,17 @@ origin_list = ['blue','red','blue','grey','yellow','yellow','blue','black']
 duplicate_list, no_duplicate_list, duplicate_dict = clean_duplicate(origin_list,True)
 renamed_duplicate = rename_duplicate(origin_list,True)
 
-# 重复元素在set中自动被过滤:
-# no_duplicate_list2 =list(set(origin_list))
-# print("new_list2: ",no_duplicate_list2)
+
+"""
+# 2.重复元素在set中自动被过滤:
+no_duplicate_list2 =list(set(origin_list))
+print("new_list2: ",no_duplicate_list2)
+
+# 3.统计重复元素.
+li = ['blue','red','blue','grey','yellow','yellow','blue','black']
+dup = set()
+for i in li:
+     if li.count(i)>1:
+         dup.add(i)
+print("dup: ",dup)
+"""
