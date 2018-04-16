@@ -26,3 +26,4 @@ def clean_duplicate(list,print_result=False):
 origin_list = ['blue','red','blue','grey','yellow','yellow','blue','black']
 duplicate_list, no_duplicate_list, duplicate_dict = clean_duplicate(origin_list,True)
 renamed_duplicate = rename_duplicate(origin_list,True)
+
