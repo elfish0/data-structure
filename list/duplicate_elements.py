@@ -27,3 +27,6 @@ origin_list = ['blue','red','blue','grey','yellow','yellow','blue','black']
 duplicate_list, no_duplicate_list, duplicate_dict = clean_duplicate(origin_list,True)
 renamed_duplicate = rename_duplicate(origin_list,True)
 
+# 重复元素在set中自动被过滤:
+# no_duplicate_list2 =list(set(origin_list))
+# print("new_list2: ",no_duplicate_list2)
