@@ -40,4 +40,8 @@ for i in li:
      if li.count(i)>1:
          dup.add(i)
 print("dup: ",dup)
+
+# 4.统计重复元素.
+dup2 = set([e for e in li if li.count(e)>1])
+print("dup2: ",dup2)
 """
